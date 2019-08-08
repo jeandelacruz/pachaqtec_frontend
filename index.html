@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link rel="stylesheet" href="css/custom.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Enviar mail</title>
+    </head>
+    <body>
+        <div class="container primeraSeccion">
+            <div class="row">
+                <div class="col m5 s12">
+                    <div id="contenido1">
+                        <div class="row" style="margin-bottom: 0;">
+                            <p style="margin-bottom: 0.5em; font-size: 30px; font-weight: bold;">FORMULARIO INFORMATIVO</p>
+                        </div>
+
+                        <div class="row">
+                            <span style="font-size: 15px; line-height:1;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos deserunt nesciunt non esse officia necessitatibus libero excepturi accusamus aspernatur facilis obcaecati veritatis corporis odio, consequatur doloremque perspiciatis nihil ipsum id.</span>
+                        </div>
+
+                        <div class="row" style="padding-bottom: 0; margin-bottom:0; font-weight:bold;">
+                            <span style="font-size: 12px;">diegocueva.re@gmail.com</span>
+                        </div>
+
+                        <div class="row" style="padding-bottom: 0; margin-bottom:0; font-weight:bold;">
+                            <span style="font-size:12px;">FrontEnd Developer</span>
+                        </div>
+
+                        <div class="row" style="padding-bottom: 0; margin-bottom:0; font-weight:bold;">
+                            <span style="font-size: 12px;">/DC</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m6 s12 offset-m1">
+                    <div id="contenido" class="m2">
+
+                        <header id="header" class=" red darken-1">
+                            Enviar Nuevo Mail
+                        </header>
+                        <form id="enviar-mail" action="/" class="col s10 offset-s1">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="name" type="text" name="name">
+                                    <label for="name">Nombre:</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" name="email">
+                                    <label for="email">Email:</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                            </div>
+
+                            <div class="row" id="loaders">
+                                <img id="spinner" src="./img/spinner.gif" alt="" height="100">
+                                <!--	<img src="./img/mail.gif" alt="" height="100">-->
+                            </div>
+
+                            <div class="row" id="boxError">
+                                <div class="col s12">
+                                    <div class="card red darken-1">
+                                        <div class="card-content white-text" id="boxErrorText"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s6">
+                                    <button id="send" class="btn waves-effect waves-light  red darken-2"
+                                            name="action">Enviar
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                                <div class="col s6">
+                                    <button id="reset" class="btn waves-effect waves-light red darken-2">Reset
+                                        <i class="material-icons right">delete</i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div> <!--.contenido-->
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer red darken-1 segundaSeccion">
+            <div class="container">
+                <div class="row">
+                    <div class="col m6">
+                        <h5 class="white-text">Final de nuestra Landing</h5>
+                        <p class="grey-text text-lighten-4">Pueden poner aqui el contenido que crean conveniente para el pie de
+                            pagina</p>
+                    </div>
+                    <div class="col m6" style="text-align: right;">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Google</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2019 Derechos Reservados
+                    <a class="grey-text text-lighten-4 right" href="#!">PachaQTec</a>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
